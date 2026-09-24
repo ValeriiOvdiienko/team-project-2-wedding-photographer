@@ -3,31 +3,34 @@
     left: 0;
     width: 100%;
     z-index: 100;
+    
 }
 
-.header .container {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-container {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }
 
 .nav-btn-wrap {
     display: none;
 }
-
-.header-book-btn {
-    display: none;
-    width: 154px;
-    border: 1px solid var(--default-mustard);
-    background-color: var(--default-mustard);
-    border-radius: 6px;
-    padding-block: 8px;
-    text-align: center;
-}
-
-.nav-logo {}
-
-.nav-logo-icon {}
 
 @media only screen and (min-width: 768px) {
     .nav-btn-wrap {
@@ -36,27 +39,26 @@
         gap: 32px;
     }
 
-    .nav-list {
-        display: flex;
-        gap: 32px;
-    }
+}
 
+.header-book-btn {
+    display: none;
+    width: 154px;
+    border-radius: 6px;
+    padding-block: 8px;
+}
+
+@media only screen and (min-width: 768px) {
     .header-book-btn {
         display: block;
     }
 }
 
-.open-menu-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border: none;
-    background: transparent;
-}
+.nav-logo-icon {}
 
-.open-menu-icon {
-    display: none;
+.nav-list {
+    display: flex;
+    gap: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,22 +66,11 @@
         display: none;
     }
 
-    .nav-list {
-        display: flex;
-    }
-
     .mobile-menu {
         display: none;
     }
 
-    .nav {
-        display: flex;
-    }
-
 }
-
-.open-menu-icon {}
-
 .close-menu-icon {
     display: none;
 }
@@ -101,7 +92,7 @@
     transform: translateX(0);
 }
 
-/* міняємо іконки в залежності від класу menu-open на header */
+/* Change burger-menu icons if menu-open */
 .header.menu-open .open-menu-icon {
     display: none;
 }
@@ -119,14 +110,4 @@
 .mobile-menu-item {
     padding-top: 12px;
     padding-bottom: 12px;
-}
-
-.mobile-book-btn {
-    margin: 0 auto;
-    width: 335px;
-    text-align: center;
-    border: 1px solid var(--default-mustard);
-    background-color: var(--default-mustard);
-    border-radius: 6px;
-    padding-block: 10px;
 }
