@@ -164,8 +164,11 @@ img {
 }
 /* === buttons === */
 .button {
-  width: 100%;
-  padding: 24px 10px;
+  /* width: 100%; */
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   text-align: center;
   background-color: var(--default-mustard);
   box-shadow: none;
