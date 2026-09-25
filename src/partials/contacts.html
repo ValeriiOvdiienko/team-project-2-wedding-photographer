@@ -1,7 +1,7 @@
 <section class="contact-section" id="contact">
   <div class="container">
     <svg class="divider-icon" width="300" height="20">
-      <use href="../images/sprite.svg#icon-decor"></use>
+      <use href="./images/sprite.svg#icon-decor"></use>
     </svg>
 
     <div class="contact-content">
@@ -96,3 +96,52 @@
     </div>
   </div>
 </section>
+
+<!-- Add .is-open to open modal -->
+<div class="modal is-open" id="modal">
+  <div class="container">
+    <div class="modal-wrap">
+      <button class="close-modal-btn">
+        <svg class="close-menu-icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="heading-modal">Thank You for Your Inquiry!</h2>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./images/success_modal/desktop_success-modal.avif    1x,
+            ./images/success_modal/desktop_success-modal@2x.avif 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/success_modal/tablet_success-modal.avif    1x,
+            ./images/success_modal/tablet_success-modal@2x.avif 2x
+          "
+        />
+
+        <img
+          class="img-modal"
+          src="./images/success_modal/mobile_success-modal.avif"
+          srcset="
+            ./images/success_modal/mobile_success-modal.avif    1x,
+            ./images/success_modal/mobile_success-modal@2x.avif 2x
+          "
+          alt="Cup of coffee, a small, elegant sprig of fresh eucalyptus, and scattered wedding photo prints"
+          width="295"
+          height="207"
+        />
+      </picture>
+      <p class="text-regular-normal">
+        I have received your message and I'm so excited about your interest! I
+        will get in touch with you within 24-48 hours to discuss the details of
+        your wedding day. In the meantime, feel free to browse my portfolio or
+        follow me on Instagram for more inspiration.
+      </p>
+    </div>
+  </div>
+</div>
