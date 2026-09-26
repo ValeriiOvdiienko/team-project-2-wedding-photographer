@@ -1,11 +1,5 @@
-.feedbacks {
+/* .is-feedback {
   text-align: center;
-}
-
-.feedbacks-container {
-  width: 375px; 
-  margin: 0 auto;
-  padding: 64px 20px;
 }
 
 .feedbacks-inner {
@@ -28,9 +22,7 @@
 }
 
 .feedbacks-subtitle {
-  font-size: 18px;
   margin-bottom: 24px; 
-  color: var(--default-black);
 }
 
 .feedbacks-slider .swiper-wrapper {
@@ -50,18 +42,12 @@
   border: 2px solid var(--default-black);
   border-radius: 16px; 
   display: flex;             
-  flex-direction: column;      
-}
+  flex-direction: column;
+}      
 
-.feedback-quote-text {
-  font-size: 18px;
-  flex-grow: 1; 
-  margin-bottom: 24px; 
-}
-
-.feedback-author {
-  color: var(--default-black);
-}
+.feedback-item p:first-child {
+flex-grow: 1; 
+margin-bottom: 24px; }
 
 .feedbacks-slider-bottom {
   display: flex;
@@ -81,7 +67,7 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  outline: 2px solid var(--default-black);
+  border: 2px solid var(--default-black);
   border-radius: 4px;
   background-color: var(--transparent);
   color: var(--default-black);
@@ -122,26 +108,23 @@
   background-color: var(--opacity-15);
 }
 
-.feedbacks-slider-span:nth-child(1) {
+.feedbacks-slider-span.is-active {
   width: 8px;
   height: 8px;
   background-color: var(--default-black);
 }
 
-.feedbacks-slider-span:nth-child(2) {
+.feedbacks-slider-span.small {
   width: 6px;
   height: 6px;
 }
 
-.feedbacks-slider-span:nth-child(3) {
+.feedbacks-slider-span.smaller {
   width: 4px;
   height: 4px;
 }
 
 @media (min-width: 768px) {
-  .feedbacks-container {
-    width: auto; 
-  }
 
   .feedbacks-inner {
     max-width: 704px;
@@ -162,7 +145,6 @@
 
   .feedback-item {
     width: calc((100% - 48px) / 3); 
-    padding: 32px; 
   }
 
   .feedbacks-slider-bottom {
@@ -186,4 +168,167 @@
   }
 
 }
+ */
 
+
+ .is-feedback {
+  text-align: center;
+}
+
+.decoration {
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 300px; 
+  height: 20px; 
+  max-width: 100%; 
+  fill: var(--default-black); 
+}
+
+.feedbacks-title {
+  margin-bottom: 24px;
+}
+
+
+.feedbacks-subtitle {
+  max-width: 335px; 
+  margin: 0 auto 24px auto; 
+}
+
+@media (min-width: 768px) {
+  .feedbacks-subtitle {
+    max-width: 550px; 
+    margin: 0 auto 40px auto; 
+  }
+}
+
+@media (min-width: 1440px){
+  .feedbacks-subtitle {
+    max-width: 1312px; 
+    width: 100%;
+  }
+}
+
+
+.feedbacks-slider .swiper-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 32px; 
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .feedbacks-slider .swiper-wrapper {
+    flex-direction: row;
+    gap: 24px; 
+    justify-content: space-between;
+  }
+}
+
+.feedback-item {
+  text-align: left;
+  height: auto;
+  padding: 32px; 
+  background-color: var(--foreground-1);
+  border: 2px solid var(--default-black);
+  border-radius: 16px; 
+  display: flex;             
+  flex-direction: column;
+}       
+
+@media (min-width: 768px) {
+  .feedback-item {
+    width: calc((100% - 48px) / 3); 
+  }
+}
+
+@media (min-width: 1440px){
+  .feedback-item {
+    max-width: 421px;
+    width: 100%;
+  }
+}
+
+.feedback-item p:first-child {
+  flex-grow: 1; 
+  margin-bottom: 24px; 
+}
+
+.feedbacks-slider-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 24px; 
+}
+
+@media (min-width: 768px) {
+  .feedbacks-slider-bottom {
+    margin-top: 48px;
+  }
+}
+
+.swiper-navigation {
+  display: flex;
+  gap: 16px; 
+}
+
+.slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--default-black);
+  border-radius: 4px;
+  background-color: var(--transparent);
+  color: var(--default-black);
+  cursor: pointer;
+  transition: background-color var(--anim), border-color var(--anim), transform var(--anim), color var(--anim);
+}
+
+.slider-btn svg {
+  fill: none; 
+  stroke: currentColor; 
+  stroke-width: 2px;
+}
+
+.swiper-button-prev-custom svg {
+  transform: scaleX(-1);
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+  background-color: var(--active-mustard);
+}
+
+.slider-btn:active {
+  background-color: var(--foreground-1);
+}
+
+.swiper-pagination-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.feedbacks-slider-span {
+  border-radius: 50%; 
+  background-color: var(--opacity-15);
+}
+
+.feedbacks-slider-span.is-active {
+  width: 8px;
+  height: 8px;
+  background-color: var(--default-black);
+}
+
+.feedbacks-slider-span.small {
+  width: 6px;
+  height: 6px;
+}
+
+.feedbacks-slider-span.smaller {
+  width: 4px;
+  height: 4px;
+}
