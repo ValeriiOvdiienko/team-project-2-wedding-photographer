@@ -1,0 +1,111 @@
+.container.is-hero {
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+.wrapper.is-hero {
+  padding: 32px 20px;
+  --hero-overlay: linear-gradient(to left, var(--opcity-8), var(--opacity-66));
+  background-image: var(--hero-overlay), url('../images/hero-img/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+}
+/* === media-запити для форматування блоків контенту відповідно до макета === */
+@media (min-width: 768px) {
+  .wrapper.is-hero {
+    padding: 32px 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper.is-hero {
+    padding: 32px 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 32px;
+  }
+}
+/* === media-запити для фонового зображення === */
+/* 2x dpi */
+@media (min-resolution: 192dpi) {
+  .wrapper.is-hero {
+    background-image:
+      var(--hero-overlay), url('../images/hero-img/hero-bg@2x.png');
+  }
+}
+/* tablet & 2x dpi */
+@media (min-width: 768px) {
+  .wrapper.is-hero {
+    background-image:
+      var(--hero-overlay), url('../images/hero-img/hero-bg-tabl.png');
+  }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .wrapper.is-hero {
+    background-image:
+      var(--hero-overlay), url('../images/hero-img/hero-bg-tabl@2x.png');
+  }
+}
+/* deckstop & 2x dpi */
+@media (min-width: 1440px) {
+  .wrapper.is-hero {
+    background-image:
+      var(--hero-overlay), url('../images/hero-img/hero-bg-dec.jpg');
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
+  .wrapper.is-hero {
+    background-image:
+      var(--hero-overlay), url('../images/hero-img/hero-bg-dec@2x.jpg');
+  }
+}
+/* === media-запити для роботи з текстовими блоками === */
+.heading-main.is-hero {
+  color: var(--default-white);
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .heading-main.is-hero {
+    padding-top: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .heading-main.is-hero {
+    padding-top: 394px;
+  }
+}
+p.is-hero {
+  color: var(--default-white);
+  margin-bottom: 32px;
+}
+@media (min-width: 1440px) {
+  p.is-hero {
+    margin: 0;
+  }
+}
+/* === media-запити для роботи з кнопками === */
+@media (max-width: 767.98px) {
+  .button.is-hero {
+    background-color: var(--default-white);
+    outline: 1px solid var(--default-white);
+  }
+  .button.is-hero:hover,
+  .button.is-hero:focus {
+    background-color: var(--default-mustard);
+    outline: 2px solid var(--default-white);
+  }
+  .button.is-hero:active {
+    background-color: var(--active-mustard);
+    outline: 2px solid var(--default-mustard);
+    box-shadow:
+      inset 0 4px 8px -2px rgba(0, 0, 0, 0.1),
+      inset 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  }
+}
+@media (min-width: 768px) {
+  .button {
+    max-width: 159px;
+  }
+}
