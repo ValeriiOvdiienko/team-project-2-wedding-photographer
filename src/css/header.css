@@ -85,16 +85,16 @@
     padding: 0px 20px 40px 20px;
 }
 
-.header.menu-open + .mobile-menu {
+.mobile-menu.is-visible {
     transform: translateX(0);
 }
 
 /* Change burger-menu icons if menu-open */
-.header.menu-open .open-menu-icon {
+.open-menu-btn.is-visible .open-menu-icon {
     display: none;
 }
 
-.header.menu-open .close-menu-icon {
+.open-menu-btn.is-visible .close-menu-icon {
     display: block;
 }
 

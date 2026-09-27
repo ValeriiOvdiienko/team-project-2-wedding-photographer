@@ -5,3 +5,4 @@ import '../src/js/feedbacks.js';
 import '../src/js/portfolio.js';
 import '../src/js/faq.js';
 import '../src/js/contacts.js';
+import '../src/js/mobile-menu.js'
