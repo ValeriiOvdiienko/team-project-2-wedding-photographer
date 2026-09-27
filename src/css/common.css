@@ -69,7 +69,7 @@ ul {
 }
 
 a {
-  display: block;
+  display: inline-block;
   color: inherit;
   font-style: normal;
   text-decoration: none;
@@ -210,6 +210,22 @@ img {
   box-shadow:
     inset 0 4px 8px -2px rgba(0, 0, 0, 0.1),
     inset 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+/* === links effects */
+.active-link {
+  background-color: var(--transparent);
+  transition: background-color var(--anim);
+}
+.active-link:hover,
+.active-link:focus {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 6px;
+  background-color: var(--opacity-15);
+}
+.active-link:active {
+  color: var(--dark-mustard);
+  fill: var(--dark-mustard);
 }
 /* === loader === */
 /* HTML: <div class="loader"></div> */
