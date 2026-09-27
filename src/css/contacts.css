@@ -1,49 +1,65 @@
-.divider-icon {
-  display: block;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .divider-icon {
-    margin: 0;
+/* ====== Contacts ===== */
+/* .contacts {
+    padding: 40px 20px;
+    background-color: var(--background);
   }
-}
+
+  @media (min-width: 768px) {
+    .contacts {
+      padding: 60px 32px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .contacts {
+      padding: 80px;
+    }
+  } */
 
 .contact-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 24px;
+  /* max-width: 480px; */
+  /* margin: 0 auto; */
 }
-
-@media only screen and (min-width: 1440px) {
-  .contact-content {
-    flex-direction: row;
-  }
-  .container-divider,
-  .contact-form {
-    width: 644px;
-  }
-}
-
-.container-divider {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.contacts-heading {
   text-align: center;
-  align-items: center;
+}
+.contacts-description {
+  text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .container-divider {
-    text-align: start;
+@media (min-width: 768px) {
+  .sec-decoration.is-contacts {
+    margin-left: 0;
+  }
+  .contacts-heading {
+    text-align: left;
+  }
+  .contacts-description {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 80px; */
+    /* max-width: 1280px; */
+    /* margin: 0 auto; */
     align-items: start;
   }
 }
 
-.contact-content h2,
-.contact-content p {
-  margin: 0 auto;
+/* ---------- Decoration ----------
+.contacts-decor-wrap {
+  width: 300px;
+  height: 20px;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -124,7 +140,31 @@
     visibility var(--anim);
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contacts-input,
+.contacts-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  color: var(--default-black);
+  background-color: var(--transparent);
+  border: 1px solid var(--opacity-60);
+  border-radius: 6px;
+  outline: none;
+  transition:
+    border-color var(--anim),
+    box-shadow var(--anim);
+}
+
+@media (min-width: 768px) {
+  .contacts-input,
+  .contacts-textarea {
+    padding: 13px 16px;
+  }
 }
 
 .modal.is-open {
@@ -147,13 +187,10 @@
   max-height: 660px;
   background-color: var(--background);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  transform: scale(0.9);
-  transition: transform 250ms var(--anim);
+.contacts-textarea {
+  min-height: 120px;
+  max-height: 200px;
+  resize: vertical;
 }
 
 @media only screen and (min-width: 768px) {
