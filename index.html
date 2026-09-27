@@ -12,7 +12,7 @@
     />
     <title>Wedding photographer</title>
     <script type="module" crossorigin src="/team-project-2-wedding-photographer/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/index-C8mQMXaf.css">
+    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/index-CGoHfZoD.css">
   </head>
   <body>
     <!-- у цьому файлі містяться лише завантаження паршалів
@@ -20,9 +20,9 @@
     <!-- Add to header .menu-open to open mobile-menu. -->
 
 <header class="header">
-  <div class="header-container">
+  <div class="container is-header">
     <a class="nav-logo" href="./index.html" aria-label="Site logo">
-      <svg class="nav-logo-icon" width="70" height="61">
+      <svg class="nav-logo-icon" width="69" height="61">
         <use href="/team-project-2-wedding-photographer/assets/sprite-DIXswcUZ.svg#icon-logo"></use>
       </svg>
     </a>
@@ -49,7 +49,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="header-book-btn button text-regular-medium"
+      <a href="#contacts" class="button is-header text-regular-medium"
         >Book a Session</a
       >
     </div>
@@ -96,7 +96,7 @@
         >
       </li>
       <li class="mobile-menu-item">
-        <a href="#faq" class="mobile-menu-link text-regular-normal" active-link
+        <a href="#faq" class="mobile-menu-link text-regular-normal active-link"
           >FAQ</a
         >
       </li>
@@ -127,6 +127,9 @@
 
       <section class="section is-about">
   <div class="container is-about">
+    <svg class="sec-decoration is-about" width="299" height="20">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    </svg>
     <h2 class="heading-medium about-heading">
       Meet Maria Kovalenko: Your Partner in Capturing Unforgettable Wedding
       Moments
@@ -165,8 +168,8 @@
       
       <section id="feedbacks" class="section is-feedback">
   <div class="container is-feedback">
-    <svg class="decoration" width="300" height="20" aria-hidden="true">
-      <use href="/team-project-2-wedding-photographer/assets/sprite-DIXswcUZ.svg#icon-decoration"></use>
+    <svg class="sec-decoration" width="299" height="20">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
     </svg>
 
     <h2 class="heading-large feedbacks-title">
@@ -243,12 +246,10 @@
 
       <section class="section is-portfolio">
   <div class="container is-portfolio">
-    <div class="portfolio-section-heading">
-      <svg class="icon">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-DIXswcUZ.svg#icon-decoration"></use>
-      </svg>
-      <h2 class="heading-large">Portfolio Highlights</h2>
-    </div>
+    <svg class="sec-decoration" width="299" height="20">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    </svg>
+    <h2 class="heading-large">Portfolio Highlights</h2>
 
     <ul class="portfolio-img-filters-list">
       <li class="img-filters-item">
@@ -297,13 +298,9 @@
 
       <section id="faq" class="section is-faq">
   <div class="container is-faq">
-<svg
-  class="faq-decor"
-  aria-hidden="true"
-  preserveAspectRatio="none"
->
-  <use href="/team-project-2-wedding-photographer/assets/sprite-DIXswcUZ.svg#icon-decoration"></use>
-</svg>
+<svg class="sec-decoration" width="299" height="20">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    </svg>
 
 
 
@@ -386,47 +383,69 @@
 </section>
 
 
-      <section class="contacts">
+      <section class="section is-contacts">
   <div class="container contacts-container">
     <div class="contacts-info">
-      <div class="contacts-decor-wrap">
-        <svg class="contacts-decor" aria-hidden="true">
-          <use href="../images/sprite.svg#icon-decoration"></use>
-        </svg>
-      </div>
+      <svg class="sec-decoration is-contacts" width="299" height="20">
+        <use href="../images/sprite-1.svg#icon-decoration"></use>
+      </svg>
 
-      <h2 class="heading-large">Let's Tell Your Story</h2>
+      <h2 class="contacts-heading heading-large">Let's Tell Your Story</h2>
 
       <p class="contacts-description">
         I can't wait to hear more about your wedding! Tell me about your plans,
         and I'll be in touch to discuss how we can create magic together.
       </p>
 
-      <ul class="contacts-details">
-        <li class="contacts-item">
-          <svg class="contacts-icon" aria-hidden="true" width="18" height="18">
-            <use href="../images/sprite.svg#icon-close"></use>
-          </svg>
-          <a class="text-regular-normal" href="mailto:info@mariakovalenko.com">info@mariakovalenko.com</a>
-         </li>
-        
-        <li class="contacts-item">
-          <svg class="contacts-icon" aria-hidden="true" width="18" height="18">
-            <use href="../images/sprite.svg#icon-mail"></use>
-          </svg>
-          <a class="text-regular-normal" href="tel:+405551234567">+40 (555) 123-4567</a>
-        </li>
+      <address>
+        <ul class="contacts-details">
+          <li class="contacts-item">
+            <svg
+              class="contacts-icon"
+              aria-hidden="true"
+              width="18"
+              height="18"
+            >
+              <use href="../images/sprite.svg#icon-close"></use>
+            </svg>
+            <a class="text-regular-normal" href="mailto:info@mariakovalenko.com"
+              >info@mariakovalenko.com</a
+            >
+          </li>
 
-        <li class="contacts-item">
-          <svg class="contacts-icon" aria-hidden="true" width="18" height="18">
-            <use href="../images/sprite.svg#icon-call"></use>
-          </svg>
-          <a class="text-regular-medium contacts-link-address"
-          href="https://www.google.com/maps/search/?api=1&query=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
-          target="_blank"
-          rel="noopener noreferrer">Raschdorffstraße 2-26, 13409 Berlin, Germany</a>
-        </li>
-      </ul>
+          <li class="contacts-item">
+            <svg
+              class="contacts-icon"
+              aria-hidden="true"
+              width="18"
+              height="18"
+            >
+              <use href="../images/sprite.svg#icon-mail"></use>
+            </svg>
+            <a class="text-regular-normal" href="tel:+405551234567"
+              >+40 (555) 123-4567</a
+            >
+          </li>
+
+          <li class="contacts-item">
+            <svg
+              class="contacts-icon"
+              aria-hidden="true"
+              width="18"
+              height="18"
+            >
+              <use href="../images/sprite.svg#icon-call"></use>
+            </svg>
+            <a
+              class="text-regular-medium contacts-link-address"
+              href="https://www.google.com/maps/search/?api=1&query=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Raschdorffstraße 2-26, 13409 Berlin, Germany</a
+            >
+          </li>
+        </ul>
+      </address>
     </div>
 
     <form class="contacts-form">
@@ -464,7 +483,9 @@
         ></textarea>
       </div>
 
-      <button class="button" type="submit">Let's Talk</button>
+      <button class="button is-contacts text-regular-medium" type="submit">
+        Let's Talk
+      </button>
     </form>
   </div>
 </section>
