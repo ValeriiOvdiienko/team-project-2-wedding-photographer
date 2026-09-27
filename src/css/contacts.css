@@ -1,33 +1,45 @@
 /* ====== Contacts ===== */
-.contacts {
-  padding: 40px 20px;
-  background-color: var(--background);
-}
-
-@media (min-width: 768px) {
-  .contacts {
-    padding: 60px 32px;
+/* .contacts {
+    padding: 40px 20px;
+    background-color: var(--background);
   }
-}
 
-@media (min-width: 1440px) {
-  .contacts {
-    padding: 80px;
+  @media (min-width: 768px) {
+    .contacts {
+      padding: 60px 32px;
+    }
   }
-}
+
+  @media (min-width: 1440px) {
+    .contacts {
+      padding: 80px;
+    }
+  } */
 
 /* ---------- Container ---------- */
 .contacts-container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  max-width: 480px;
-  margin: 0 auto;
+  gap: 24px;
+  /* max-width: 480px; */
+  /* margin: 0 auto; */
+}
+.contacts-heading {
+  text-align: center;
+}
+.contacts-description {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  .contacts-container {
-    gap: 36px;
+  .sec-decoration.is-contacts {
+    margin-left: 0;
+  }
+  .contacts-heading {
+    text-align: left;
+  }
+  .contacts-description {
+    text-align: left;
   }
 }
 
@@ -35,14 +47,14 @@
   .contacts-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    max-width: 1280px;
-    margin: 0 auto;
+    /* gap: 80px; */
+    /* max-width: 1280px; */
+    /* margin: 0 auto; */
     align-items: start;
   }
 }
 
-/* ---------- Decoration ---------- */
+/* ---------- Decoration ----------
 .contacts-decor-wrap {
   width: 300px;
   height: 20px;
@@ -66,7 +78,7 @@
   height: 300px;
   fill: var(--default-black);
   color: var(--default-black);
-}
+} */
 
 /* ---------- Info block ---------- */
 .contacts-info {
@@ -127,28 +139,13 @@
 
 .contacts-item a {
   color: var(--default-black);
-  
 }
-
 
 /* ---------- Form ---------- */
 .contacts-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-}
-
-@media (min-width: 768px) {
-  .contacts-form {
-    gap: 20px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .contacts-form {
-    gap: 20px;
-    margin-top: 6px;
-  }
+  gap: 24px;
 }
 
 .contacts-field {
@@ -168,7 +165,9 @@
   border: 1px solid var(--opacity-60);
   border-radius: 6px;
   outline: none;
-  transition: border-color var(--anim), box-shadow var(--anim);
+  transition:
+    border-color var(--anim),
+    box-shadow var(--anim);
 }
 
 @media (min-width: 768px) {
@@ -191,7 +190,6 @@
   color: var(--opacity-60);
 }
 
-
 .contacts-textarea {
   min-height: 120px;
   max-height: 200px;
@@ -212,14 +210,10 @@
   }
 }
 
-.contacts-form .button {
-  width: auto;
-  align-self: flex-start;
-  padding: 14px 32px;
-}
-
-@media (min-width: 1440px) {
-  .contacts-form .button {
-    padding: 16px 40px;
+@media (min-width: 768px) {
+  .button.is-contacts {
+    margin-right: auto;
+    max-width: 310px;
+    min-height: 44px;
   }
 }

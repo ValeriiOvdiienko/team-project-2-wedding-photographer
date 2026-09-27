@@ -256,3 +256,12 @@ img {
 .loader.is-active {
   display: block;
 }
+/* === svg decoration */
+/* === html === */
+/* <svg class="sec-decoration is-about" width="299" height="20">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    </svg> */
+.sec-decoration {
+  display: block;
+  margin: 0 auto 24px;
+}

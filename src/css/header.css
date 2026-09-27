@@ -15,7 +15,6 @@
   padding-top: 0;
   max-height: 64px;
 }
-
 @media (min-width: 768px) {
   .container.is-header {
     max-height: 72px;
