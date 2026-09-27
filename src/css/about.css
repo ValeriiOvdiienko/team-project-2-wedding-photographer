@@ -1,3 +1,7 @@
+.sec-decoration.is-about {
+  display: block;
+  margin-bottom: 0;
+}
 .about-heading {
   text-align: center;
   margin: 24px 0;
