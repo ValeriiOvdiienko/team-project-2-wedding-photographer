@@ -58,7 +58,6 @@
   margin: 0;
 }
 
-
 .feedbacks-slider-bottom {
   display: flex;
   align-items: center;
@@ -81,8 +80,11 @@
   background-color: var(--transparent);
   color: var(--default-black);
   cursor: pointer;
-  transition: background-color var(--anim), border-color var(--anim),
-    transform var(--anim), color var(--anim);
+  transition:
+    background-color var(--anim),
+    border-color var(--anim),
+    transform var(--anim),
+    color var(--anim);
 }
 
 .slider-btn svg {
@@ -108,7 +110,7 @@
 .slider-btn.swiper-button-disabled {
   opacity: 0.4;
   cursor: not-allowed;
-  pointer-events: none;
+  /* pointer-events: none; */
   background-color: var(--transparent);
   border-color: var(--opacity-15);
   color: var(--opacity-15);
@@ -116,28 +118,41 @@
 
 .is-feedback .feedbacks-slider-bottom .swiper-pagination-custom {
   display: flex;
-  gap: 8px; 
+  gap: 8px;
   align-items: center;
   width: auto;
   margin: 0;
 }
 
-.is-feedback .feedbacks-slider-bottom .swiper-pagination-custom .swiper-pagination-bullet {
-  display: block; 
+.is-feedback
+  .feedbacks-slider-bottom
+  .swiper-pagination-custom
+  .swiper-pagination-bullet {
+  display: block;
   width: 8px;
   height: 8px;
-  margin: 0; 
+  margin: 0;
   background-color: var(--default-black);
   opacity: 0.15;
   border-radius: 50%;
-  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    opacity 0.3s ease,
+    background-color 0.3s ease;
 }
-.is-feedback .feedbacks-slider-bottom .swiper-pagination-custom .swiper-pagination-bullet:last-child:not(.swiper-pagination-bullet-active) {
+.is-feedback
+  .feedbacks-slider-bottom
+  .swiper-pagination-custom
+  .swiper-pagination-bullet:last-child:not(.swiper-pagination-bullet-active) {
   width: 6px;
   height: 6px;
 }
 
-.is-feedback .feedbacks-slider-bottom .swiper-pagination-custom .swiper-pagination-bullet-active {
+.is-feedback
+  .feedbacks-slider-bottom
+  .swiper-pagination-custom
+  .swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
   opacity: 1;
