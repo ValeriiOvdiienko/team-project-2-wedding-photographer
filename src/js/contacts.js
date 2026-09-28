@@ -99,7 +99,7 @@ document.addEventListener('keydown', event => {
   }
 });
 
-// Обробка відправки форми
+//  Обробка відправки форми
 form.addEventListener('submit', async event => {
   event.preventDefault();
 
