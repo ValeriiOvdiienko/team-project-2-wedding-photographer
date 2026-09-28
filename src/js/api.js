@@ -9,6 +9,7 @@ export async function getAllImages(page, limit = 9) {
             limit: limit,
         },
     });
+    console.log(response.data);
     return response.data;
 }
 
@@ -28,5 +29,7 @@ export async function getImagesByCategory(categoryName, page, limit = 9) {
             categoryId: categoryId,
         },
     });
+    console.log(response.data);
+
     return response.data;
 }

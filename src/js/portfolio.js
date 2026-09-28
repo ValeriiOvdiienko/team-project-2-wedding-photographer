@@ -15,15 +15,20 @@ const limit = 3;
 filtersList.addEventListener('click', async (event) => {
     event.preventDefault();
 
+    if (!event.target.classList.contains("portfolio-filters-btn")) {
+        return;
+    }
+
     const previosActiveButton = document.querySelector(".active");
     previosActiveButton.classList.remove("active");
 
     event.target.classList.add("active");
-    
+
     page = 1;
     const categoryName = event.target.textContent.trim();
     currentCategory = categoryName;
     clearGallery();
+    makeShowMoreButtonDisabled();
     showLoader();
 
     try {
@@ -34,7 +39,7 @@ filtersList.addEventListener('click', async (event) => {
         createGallery(data.weddingPhotos, true);
         console.log(data);
         isEndOfGallery(data.totalItems);
-        page += 1;
+        page = 4;
     } catch (error) {
         iziToast.error({
             title: "Error",
@@ -48,6 +53,7 @@ filtersList.addEventListener('click', async (event) => {
 
 showMoreBtn.addEventListener("click", async (event) => {
     event.preventDefault();
+    makeShowMoreButtonDisabled();
     showLoader();
 
     try {
@@ -83,8 +89,21 @@ function isEndOfGallery(totalItems) {
 
 async function initGallery() {
     page = 1;
-    const data = await getAllImages(page);
-    createGallery(data.weddingPhotos, true);
+    currentCategory = "All Photos";
+    try {
+        const data = await getAllImages(page);
+        createGallery(data.weddingPhotos, true);
+        page = 4;
+        isEndOfGallery(data.totalItems);
+    } catch (error) {
+        iziToast.error({
+            title: "Error",
+            message: error.message,
+        });
+    } finally {
+        hideLoader();
+    }
+
 }
 
 initGallery();
