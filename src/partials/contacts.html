@@ -1,82 +1,126 @@
-<section class="contacts">
-  <div class="container contacts-container">
-    <div class="contacts-info">
-      <div class="contacts-decor-wrap">
-        <svg class="contacts-decor" aria-hidden="true">
-          <use href="../images/sprite.svg#icon-decoration"></use>
-        </svg>
-      </div>
-
-      <h2 class="heading-large">Let's Tell Your Story</h2>
-
-      <p class="contacts-description">
+<section class="section is-contacts" id="#contacts">
+  <div class="container is-contacts">
+    <div class="contacts-content-wrapper">
+      <svg class="sec-decoration is-contacts" width="299" height="20">
+        <use href="../images/sprite-1.svg#icon-decoration"></use>
+      </svg>
+      <h2 class="contacts-heading heading-large">Let's Tell Your Story</h2>
+      <p class="contacts-text">
         I can't wait to hear more about your wedding! Tell me about your plans,
         and I'll be in touch to discuss how we can create magic together.
       </p>
-
-      <ul class="contacts-details">
-        <li class="contacts-item">
-          <svg class="contacts-icon" aria-hidden="true" width="18" height="18">
-            <use href="../images/sprite.svg#icon-close"></use>
-          </svg>
-          <a class="text-regular-normal" href="mailto:info@mariakovalenko.com">info@mariakovalenko.com</a>
-         </li>
-        
-        <li class="contacts-item">
-          <svg class="contacts-icon" aria-hidden="true" width="18" height="18">
-            <use href="../images/sprite.svg#icon-mail"></use>
-          </svg>
-          <a class="text-regular-normal" href="tel:+405551234567">+40 (555) 123-4567</a>
-        </li>
-
-        <li class="contacts-item">
-          <svg class="contacts-icon" aria-hidden="true" width="18" height="18">
-            <use href="../images/sprite.svg#icon-call"></use>
-          </svg>
-          <a class="text-regular-medium contacts-link-address"
-          href="https://www.google.com/maps/search/?api=1&query=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
-          target="_blank"
-          rel="noopener noreferrer">Raschdorffstraße 2-26, 13409 Berlin, Germany</a>
-        </li>
-      </ul>
+      <address>
+        <ul class="contacts-inform-list">
+          <li class="contacts-inform-item text-regular-normal">
+            <a href="mailto:info@mariakovalenko.com" target="_blank"
+              >info@mariakovalenko.com</a
+            >
+          </li>
+          <li class="contacts-inform-item text-regular-normal">
+            <a href="tel:+405551234567" target="_blank">+40 (555) 123-4567</a>
+          </li>
+          <li class="contacts-inform-item text-regular-normal">
+            <a
+              href="https://maps.google.com/?q=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
+              target="_blank"
+            >
+              Raschdorffstraße 2-26, 13409 Berlin, Germany
+            </a>
+          </li>
+        </ul>
+      </address>
     </div>
-
     <form class="contacts-form">
-      <div class="contacts-field">
-        <label class="text-regular-medium" for="name">Name*</label>
+      <div class="contact-form-field">
+        <label class="text-regular-normal" for="name"> Name* </label>
+
         <input
-          class="contacts-input"
+          class="contact-form-input text-regular-normal"
           type="text"
           id="name"
           name="name"
           placeholder="Maria"
           required
         />
+        <span class="error-message text-regular-tiny">some msg</span>
       </div>
 
-      <div class="contacts-field">
-        <label class="text-regular-medium" for="phone">Phone*</label>
+      <div class="contact-form-field">
+        <label class="text-regular-normal" for="phone"> Phone* </label>
+
         <input
-          class="contacts-input"
+          class="contact-form-input text-regular-normal"
           type="tel"
           id="phone"
           name="phone"
           placeholder="+1 (202) 111 2323"
           required
         />
+        <span class="error-message"></span>
       </div>
 
-      <div class="contacts-field">
-        <label class="text-regular-medium" for="message">Message</label>
+      <div class="contact-form-field">
+        <label class="text-regular-normal" for="message"> Message </label>
+
         <textarea
-          class="contacts-textarea"
+          class="contact-form-textarea text-regular-normal"
           id="message"
           name="message"
+          rows="7"
           placeholder="Tell me a little about you and your special day. Don't forget to include your wedding date, venue, and what you're most excited about..."
         ></textarea>
       </div>
 
-      <button class="button" type="submit">Let's Talk</button>
+      <button class="form-button button" type="submit">Let's Talk</button>
     </form>
   </div>
 </section>
+
+<!-- Add .is-open to open modal -->
+<div class="modal" id="modal">
+  <div class="container">
+    <div class="modal-wrap">
+      <button class="close-modal-btn">
+        <svg class="close-menu-icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="heading-modal">Thank You for Your Inquiry!</h2>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ../images/images/success_modal/desktop_success-modal.avif    1x,
+            ../images/images/success_modal/desktop_success-modal@2x.avif 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../images/images/success_modal/tablet_success-modal.avif    1x,
+            ../images/images/success_modal/tablet_success-modal@2x.avif 2x
+          "
+        />
+
+        <img
+          class="img-modal"
+          src="../images/images/success_modal/mobile_success-modal.avif"
+          srcset="
+            ../images/images/success_modal/mobile_success-modal.avif    1x,
+            ../images/images/success_modal/mobile_success-modal@2x.avif 2x
+          "
+          alt="Cup of coffee, a small, elegant sprig of fresh eucalyptus, and scattered wedding photo prints"
+          width="295"
+          height="207"
+        />
+      </picture>
+      <p class="text-regular-normal">
+        I have received your message and I'm so excited about your interest! I
+        will get in touch with you within 24-48 hours to discuss the details of
+        your wedding day. In the meantime, feel free to browse my portfolio or
+        follow me on Instagram for more inspiration.
+      </p>
+    </div>
+  </div>
+</div>

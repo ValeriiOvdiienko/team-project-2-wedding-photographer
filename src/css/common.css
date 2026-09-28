@@ -41,6 +41,7 @@ body {
   line-height: 1.5;
   color: var(--default-black);
   background-color: var(--background);
+  scrollbar-gutter: stable;
 }
 button {
   cursor: pointer;
@@ -83,23 +84,28 @@ img {
 
 /* === container styles === */
 .section {
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
-}
-.container {
-  max-width: 375px;
-  min-width: 320px;
-  margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 64px;
+  margin: 0 auto;
 }
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    /* padding: 64px 32px; */
-  }
-  .section {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -108,15 +114,19 @@ img {
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding-left: 64px;
+    padding-right: 64px;
     padding-top: 92px;
     padding-bottom: 92px;
   }
-  .section {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
 }
+
 /* === main typography === */
+.text-regular-tiny {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
 .text-regular-small {
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
@@ -213,15 +223,17 @@ img {
 }
 /* === links effects */
 .active-link {
+  border-radius: 6px;
   background-color: var(--transparent);
-  transition: background-color var(--anim);
+  box-shadow: 0 0 0 0px var(--opacity-15);
+  transition:
+    background-color var(--anim),
+    box-shadow var(--anim);
 }
 .active-link:hover,
 .active-link:focus {
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 6px;
   background-color: var(--opacity-15);
+  box-shadow: 0 0 0 6px var(--opacity-15);
 }
 .active-link:active {
   color: var(--dark-mustard);
@@ -250,4 +262,13 @@ img {
 }
 .loader.is-active {
   display: block;
+}
+/* === svg decoration */
+/* === html === */
+/* <svg class="sec-decoration is-about" width="299" height="20">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    </svg> */
+.sec-decoration {
+  display: block;
+  margin: 0 auto 24px;
 }
