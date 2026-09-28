@@ -1,0 +1,56 @@
+<section class="section is-about" id="about">
+  <div class="container is-about">
+    <svg class="sec-decoration is-about" width="299" height="20" aria-hidden="true" focusable="false">
+      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    </svg>
+    <h2 class="heading-medium about-heading">
+      Meet Maria Kovalenko: Your Partner in Capturing Unforgettable Wedding
+      Moments
+    </h2>
+    <p class="about-text">
+      With years of experience in wedding photography, Maria specializes in
+      capturing genuine emotions and beautiful moments. Her unique approach
+      blends artistry with a personal touch, ensuring that each couple's story
+      is told through stunning imagery.
+    </p>
+
+    <picture class="about-picture">
+      <!-- Mobile: below 768px -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../images/about-img/about-img.jpg    1x,
+          ../images/about-img/about-img@2x.jpg 2x
+        "
+      />
+
+      <!-- Tablet: 768px to 1439px -->
+      <source
+        media="(min-width: 768px) and (max-width: 1439px)"
+        srcset="
+          ../images/about-img/about-tabl-img.jpg    1x,
+          ../images/about-img/about-tabl-img@2x.jpg 2x
+        "
+      />
+
+      <!-- Desktop: 1440px and wider -->
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ../images/about-img/about-dec-img.jpg    1x,
+          ../images/about-img/about-dec-img@2x.jpg 2x
+        "
+      />
+
+      <!-- Fallback image -->
+      <img
+        src="../images/about-img/about-img.jpg"
+        srcset="../images/about-img/about-img@2x.jpg 2x"
+        alt="Bride and groom holding hands during their wedding celebration"
+        width="335"
+        height="273"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>

@@ -1,7 +1,14 @@
 .container.is-hero {
+  padding-top: 32px;
+  padding-bottom: 32px;
   max-width: 1440px;
-  min-height: 100vh;
   background-color: var(--background);
+}
+@media (min-width: 1440px) {
+  .container.is-hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 .wrapper.is-hero {
   padding: 32px 20px;

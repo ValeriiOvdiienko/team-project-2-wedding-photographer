@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* margin-bottom: 32px; */
+}
+
+.container.is-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0;
+  padding-top: 0;
+  max-height: 64px;
+}
+@media (min-width: 768px) {
+  .container.is-header {
+    max-height: 72px;
+  }
+  .nav-logo-icon {
+    width: 78px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav-logo-icon {
+    width: 141px;
+    height: 71px;
+  }
+}
+
+.nav-btn-wrap {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.button.is-header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .button.is-header {
+    display: block;
+    padding: 8px;
+    width: auto;
+    max-width: 154px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+.close-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 64px 0 0 0;
+  z-index: 999;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform var(--anim);
+  justify-content: flex-start;
+  padding: 16px 20px 40px 20px;
+}
+
+.header.menu-open + .mobile-menu {
+  transform: translateX(0);
+}
+
+/* Change burger-menu icons if menu-open */
+.header.menu-open .open-menu-icon {
+  display: none;
+}
+
+.header.menu-open .close-menu-icon {
+  display: block;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  /* margin-top: 16px; */
+}
+
+.mobile-menu-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* клас який робить скрол екрана неможливим, поки меню відкрите */
+body.menu-is-open {
+  overflow: hidden;
+}
