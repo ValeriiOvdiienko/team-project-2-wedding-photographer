@@ -1,48 +1,39 @@
 <section id="feedbacks" class="section is-feedback">
-  <div class="container is-feedback">
-    
-    <svg class="decoration" width="300" height="20" aria-hidden="true">
-      <use href="./images/sprite.svg#icon-decoration"></use>
-    </svg>
+    <div class="container is-feedback">
+      
+      <svg class="decoration" width="300" height="20" aria-hidden="true">
+        <use href="./images/sprite.svg#icon-decoration"></use>
+      </svg>
 
       <h2 class="heading-large feedbacks-title">Words from Our Wonderful Couples</h2>
       <p class="feedbacks-subtitle">
         Read what the couples who entrusted us with their most precious memories have to say.
       </p>
 
-    <div class="swiper feedbacks-slider">
-      <ul class="swiper-wrapper">
-        
-        <li class="swiper-slide feedback-item">
-          <p>
-            "Maria is a true professional! She managed to capture every single emotion of our wedding day. Looking through the photos, we get to relive that special day all over again. Thank you for the incredible memories!"
-          </p>
-          <p>Olena & David</p>
-        </li>
-      </ul>
+      <div class="swiper feedbacks-slider">
+        <!-- Порожній контейнер для відгуків (JS динамічно додасть сюди <li>) -->
+        <ul class="swiper-wrapper" id="feedbacks-wrapper"></ul>
 
-      <div class="feedbacks-slider-bottom">
-        <!-- блок для майбутнього JS -->
-        <div class="swiper-pagination-custom">
-          <span class="feedbacks-slider-span is-active"></span>
-          <span class="feedbacks-slider-span small"></span>
-          <span class="feedbacks-slider-span smaller"></span>
-        </div>
-        
-        <div class="swiper-navigation">
-          <button type="button" class="swiper-button-prev-custom slider-btn" aria-label="Previous slide">
-            <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/sprite.svg#icon-arrow-back"></use>
-            </svg>
-          </button>
+        <div class="feedbacks-slider-bottom">
+          <!-- Порожній контейнер для крапок пагінації (Swiper згенерує їх сам) -->
+          <div class="swiper-pagination-custom" id="feedbacks-pagination"></div>
           
-          <button type="button" class="swiper-button-next-custom slider-btn" aria-label="Next slide">
-            <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/sprite.svg#icon-arrow-back"></use>
-            </svg>
-          </button>
+          <div class="swiper-navigation">
+            <button type="button" class="swiper-button-prev-custom slider-btn" aria-label="Previous slide">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./images/sprite.svg#icon-arrow-back"></use>
+              </svg>
+            </button>
+            
+            <button type="button" class="swiper-button-next-custom slider-btn" aria-label="Next slide">
+              <svg width="24" height="24" aria-hidden="true">
+                <!-- Упевнись, що іконка стрілки вперед розгорнута в CSS через scaleX(-1) або тут інший id іконки -->
+                <use href="./images/sprite.svg#icon-arrow-back"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
+      
     </div>
-  </div>
-</section>
+  </section>
