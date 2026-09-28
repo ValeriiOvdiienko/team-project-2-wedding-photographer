@@ -12,7 +12,9 @@
     />
     <title>Wedding photographer</title>
     <script type="module" crossorigin src="/team-project-2-wedding-photographer/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/index-cm9Ffz0_.css">
+    <link rel="modulepreload" crossorigin href="/team-project-2-wedding-photographer/assets/vendor-CHwO1TND.js">
+    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/vendor-DxHKOkZ5.css">
+    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/index-DneUi-ti.css">
   </head>
   <body>
     <!-- у цьому файлі містяться лише завантаження паршалів
@@ -23,7 +25,7 @@
   <div class="container is-header">
     <a class="nav-logo" href="./index.html" aria-label="Site logo">
       <svg class="nav-logo-icon" width="69" height="61">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-logo"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-logo"></use>
       </svg>
     </a>
     <div class="nav-btn-wrap">
@@ -60,10 +62,10 @@
       aria-label="Open navigation menu"
     >
       <svg class="open-menu-icon" width="24" height="24">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-menu"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-menu"></use>
       </svg>
       <svg class="close-menu-icon" width="24" height="24">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
       </svg>
     </button>
   </div>
@@ -237,66 +239,27 @@
     </p>
 
     <div class="swiper feedbacks-slider">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide feedback-item">
-          <p>
-            "Maria is a true professional! She managed to capture every single
-            emotion of our wedding day. Looking through the photos, we get to
-            relive that special day all over again. Thank you for the incredible
-            memories!"
-          </p>
-          <p class="text-regular-semi-bold">Olena & David</p>
-        </li>
-        <li class="swiper-slide feedback-item from-tablet">
-          <p>
-            "We are so happy we chose Maria as our wedding photographer. Her
-            personal approach and ability to see beauty in the details turned
-            our photos into a true work of art. We recommend her to everyone!
-          </p>
-          <p class="text-regular-semi-bold">Ann & Ian</p>
-        </li>
-        <li class="swiper-slide feedback-item from-tablet">
-          <p>
-            "The photoshoot with Maria was so easy and relaxed. She knows how to
-            create a comfortable atmosphere, which made the photos come out
-            incredibly lively and emotional. We are absolutely thrilled with the
-            result!"
-          </p>
-          <p class="text-regular-semi-bold">Julia & Mark</p>
-        </li>
-      </ul>
+      <ul class="swiper-wrapper" id="feedbacks-wrapper"></ul>
 
       <div class="feedbacks-slider-bottom">
-        <!-- блок для майбутнього JS -->
-        <div class="swiper-pagination-custom">
-          <span class="feedbacks-slider-span is-active"></span>
-          <span class="feedbacks-slider-span small"></span>
-          <span class="feedbacks-slider-span smaller"></span>
-        </div>
-
+        <div class="swiper-pagination-custom" id="feedbacks-pagination"></div>
+        
         <div class="swiper-navigation">
-          <button
-            type="button"
-            class="swiper-button-prev-custom slider-btn"
-            aria-label="Previous slide"
-          >
+          <button type="button" class="swiper-button-prev-custom slider-btn" aria-label="Previous slide">
             <svg width="24" height="24" aria-hidden="true">
-              <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-arrow-back"></use>
+              <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-arrow-back"></use>
             </svg>
           </button>
-
-          <button
-            type="button"
-            class="swiper-button-next-custom slider-btn"
-            aria-label="Next slide"
-          >
+          
+          <button type="button" class="swiper-button-next-custom slider-btn" aria-label="Next slide">
             <svg width="24" height="24" aria-hidden="true">
-              <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-arrow-back"></use>
+              <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-arrow-back"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
+    
   </div>
 </section>
 
@@ -372,7 +335,7 @@
      <button class="faq-question text-medium-bold" aria-expanded="false">
              How do we book our date and how far in advance should we do it?
        <svg class="faq-icon" aria-hidden="true">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
        </svg>
      </button>
        <div class="faq-answer open" role="region">
@@ -385,7 +348,7 @@
      <button class="faq-question text-medium-bold" aria-expanded="false">
              We don't know how to pose and feel awkward in front of the camera. Do you help with that?
        <svg class="faq-icon" aria-hidden="true">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
        </svg>
      </button>
        <div class="faq-answer" role="region">
@@ -398,7 +361,7 @@
      <button class="faq-question text-medium-bold" aria-expanded="false">
              When will we receive our photos and how many will there be?
        <svg class="faq-icon" aria-hidden="true">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
        </svg>
      </button>
        <div class="faq-answer" role="region">
@@ -412,7 +375,7 @@
      <button class="faq-question text-medium-bold" aria-expanded="false">
              What is typically included in your wedding packages?
        <svg class="faq-icon" aria-hidden="true">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
        </svg>
      </button>
        <div class="faq-answer" role="region">
@@ -425,7 +388,7 @@
      <button class="faq-question text-medium-bold" aria-expanded="false">
              Do you travel for weddings outside of Berlin?
        <svg class="faq-icon" aria-hidden="true">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
        </svg>
      </button>
        <div class="faq-answer" role="region">
@@ -523,7 +486,7 @@
     <div class="modal-wrap">
       <button class="close-modal-btn">
         <svg class="close-menu-icon" width="24" height="24">
-          <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-close"></use>
+          <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-close"></use>
         </svg>
       </button>
       <h2 class="heading-modal">Thank You for Your Inquiry!</h2>
@@ -564,7 +527,7 @@
       <div class="logo-copyright-wrap">
         <a class="nav-logo" href="./index.html" aria-label="Site logo">
           <svg class="nav-logo-icon" width="206" height="180">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-logo"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-logo"></use>
           </svg>
         </a>
         <p class="copyright-text text-regular-small">
@@ -611,7 +574,7 @@
                 target="_blank"
               >
                 <svg class="soc-icon" width="20" height="20">
-                  <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-fb"></use>
+                  <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-fb"></use>
                 </svg>
                 Facebook</a
               >
@@ -623,7 +586,7 @@
                 target="_blank"
               >
                 <svg class="soc-icon" width="19" height="19">
-                  <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-facebook"></use>
+                  <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-facebook"></use>
                 </svg>
                 Instagram</a
               >
@@ -635,7 +598,7 @@
                 target="_blank"
               >
                 <svg class="soc-icon" width="20" height="20">
-                  <use href="/team-project-2-wedding-photographer/assets/sprite-CPrXq-f0.svg#icon-instagram"></use>
+                  <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-instagram"></use>
                 </svg>
                 X</a
               >
