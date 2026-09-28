@@ -122,6 +122,11 @@ img {
 }
 
 /* === main typography === */
+.text-regular-tiny {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
 .text-regular-small {
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
@@ -218,15 +223,17 @@ img {
 }
 /* === links effects */
 .active-link {
+  border-radius: 6px;
   background-color: var(--transparent);
-  transition: background-color var(--anim);
+  box-shadow: 0 0 0 0px var(--opacity-15);
+  transition:
+    background-color var(--anim),
+    box-shadow var(--anim);
 }
 .active-link:hover,
 .active-link:focus {
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 6px;
   background-color: var(--opacity-15);
+  box-shadow: 0 0 0 6px var(--opacity-15);
 }
 .active-link:active {
   color: var(--dark-mustard);

@@ -1,156 +1,80 @@
-<!-- <section class="contact-section" id="contact">
-  <div class="container">
-    <svg class="divider-icon" width="300" height="20">
-      <use href="./images/sprite.svg#icon-decor"></use>
-    </svg>
-
-    <div class="contact-content">
-      <div class="container-divider">
-        <h2 class="heading-large">Let's Tell Your Story</h2>
-        <p>
-          I can't wait to hear more about your wedding! Tell me about your
-          plans, and I'll be in touch to discuss how we can create magic
-          together.
-        </p>
-        <address class="contact-info">
-          <ul class="contact-info-list">
-            <li class="contact-info-link">
-              <a
-                class="soc-link text-regular-normal"
-                href="mailto:info@mariakovalenko.com"
-              >
-                <svg class="contact-info-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-close"></use>
-                </svg>
-                <span>info@mariakovalenko.com</span>
-              </a>
-            </li>
-            <li class="contact-info-link">
-              <a class="soc-link text-regular-normal" href="tel:+405551234567">
-                <svg class="contact-info-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                <span>+40 (555) 123-4567</span>
-              </a>
-            </li>
-            <li class="contact-info-link">
-              <a
-                class="soc-link text-regular-normal"
-                href="https://maps.google.com/?q=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="contact-info-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-call"></use>
-                </svg>
-                <span> Raschdorffstraße 2-26, 13409 Berlin, Germany </span>
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
-
-      <form class="contact-form">
-        <div class="contact-form-field">
-          <label class="text-regular-normal" for="name"> Name* </label>
-<section class="section is-contacts">
-  <div class="container contacts-container">
-    <div class="contacts-info">
+<section class="section is-contacts" id="#contacts">
+  <div class="container is-contacts">
+    <div class="contacts-content-wrapper">
       <svg class="sec-decoration is-contacts" width="299" height="20">
         <use href="../images/sprite-1.svg#icon-decoration"></use>
       </svg>
-
       <h2 class="contacts-heading heading-large">Let's Tell Your Story</h2>
-
-          <input
-            class="contact-form-input text-regular-normal"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Maria"
-            required
-          />
-        </div>
-
-        <div class="contact-form-field">
-          <label class="text-regular-normal" for="phone"> Phone* </label>
-
-          <input
-            class="contact-form-input text-regular-normal"
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+1 (202) 111 2323"
-            required
-          />
-        </div>
-
-        <div class="contact-form-field">
-          <label class="text-regular-normal" for="message"> Message </label>
-
-          <textarea
-            class="contact-form-textarea text-regular-normal"
-            id="message"
-            name="message"
-            rows="7"
-            placeholder="Tell me a little about you and your special day. Don't forget to include your wedding date, venue, and what you're most excited about..."
-          ></textarea>
-        </div>
-
-        <button class="form-button button" type="submit">Let's Talk</button>
-      </form>
+      <p class="contacts-text">
+        I can't wait to hear more about your wedding! Tell me about your plans,
+        and I'll be in touch to discuss how we can create magic together.
+      </p>
       <address>
-        <ul class="contacts-details">
-          <li class="contacts-item">
-            <svg
-              class="contacts-icon"
-              aria-hidden="true"
-              width="18"
-              height="18"
-            >
-              <use href="../images/sprite.svg#icon-close"></use>
-            </svg>
-            <a class="text-regular-normal" href="mailto:info@mariakovalenko.com"
+        <ul class="contacts-inform-list">
+          <li class="contacts-inform-item text-regular-normal">
+            <a href="mailto:info@mariakovalenko.com" target="_blank"
               >info@mariakovalenko.com</a
             >
           </li>
-
-          <li class="contacts-item">
-            <svg
-              class="contacts-icon"
-              aria-hidden="true"
-              width="18"
-              height="18"
-            >
-              <use href="../images/sprite.svg#icon-mail"></use>
-            </svg>
-            <a class="text-regular-normal" href="tel:+405551234567"
-              >+40 (555) 123-4567</a
-            >
+          <li class="contacts-inform-item text-regular-normal">
+            <a href="tel:+405551234567" target="_blank">+40 (555) 123-4567</a>
           </li>
-
-          <li class="contacts-item">
-            <svg
-              class="contacts-icon"
-              aria-hidden="true"
-              width="18"
-              height="18"
-            >
-              <use href="../images/sprite.svg#icon-call"></use>
-            </svg>
+          <li class="contacts-inform-item text-regular-normal">
             <a
-              class="text-regular-medium contacts-link-address"
-              href="https://www.google.com/maps/search/?api=1&query=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
+              href="https://maps.google.com/?q=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
               target="_blank"
-              rel="noopener noreferrer"
-              >Raschdorffstraße 2-26, 13409 Berlin, Germany</a
             >
+              Raschdorffstraße 2-26, 13409 Berlin, Germany
+            </a>
           </li>
         </ul>
       </address>
     </div>
+    <form class="contacts-form">
+      <div class="contact-form-field">
+        <label class="text-regular-normal" for="name"> Name* </label>
+
+        <input
+          class="contact-form-input text-regular-normal"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Maria"
+          required
+        />
+        <span class="error-message text-regular-tiny">some msg</span>
+      </div>
+
+      <div class="contact-form-field">
+        <label class="text-regular-normal" for="phone"> Phone* </label>
+
+        <input
+          class="contact-form-input text-regular-normal"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+1 (202) 111 2323"
+          required
+        />
+        <span class="error-message"></span>
+      </div>
+
+      <div class="contact-form-field">
+        <label class="text-regular-normal" for="message"> Message </label>
+
+        <textarea
+          class="contact-form-textarea text-regular-normal"
+          id="message"
+          name="message"
+          rows="7"
+          placeholder="Tell me a little about you and your special day. Don't forget to include your wedding date, venue, and what you're most excited about..."
+        ></textarea>
+      </div>
+
+      <button class="form-button button" type="submit">Let's Talk</button>
+    </form>
   </div>
-</section> -->
+</section>
 
 <!-- Add .is-open to open modal -->
 <div class="modal" id="modal">
@@ -200,9 +124,3 @@
     </div>
   </div>
 </div>
-      <button class="button is-contacts text-regular-medium" type="submit">
-        Let's Talk
-      </button>
-    </form>
-  </div>
-</section>
