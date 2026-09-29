@@ -51,7 +51,9 @@
           placeholder="Maria"
           required
         />
-        <span class="error-message text-regular-tiny">some msg</span>
+        <span class="error-message text-regular-tiny"
+          >This field is required</span
+        >
       </div>
 
       <div class="contact-form-field">
@@ -62,10 +64,12 @@
           type="tel"
           id="phone"
           name="phone"
-          placeholder="+1 (202) 111 2323"
+          placeholder="1 (202) 111 2323"
           required
         />
-        <span class="error-message"></span>
+        <span class="error-message text-regular-tiny"
+          >This field is required</span
+        >
       </div>
 
       <div class="contact-form-field">
@@ -80,17 +84,20 @@
         ></textarea>
       </div>
 
-      <button class="form-button button" type="submit">Let's Talk</button>
+      <button class="form-button button" type="submit">
+        <span class="btn-text">Let's Talk</span>
+        <span class="loader"></span>
+      </button>
     </form>
   </div>
 </section>
 
 <!-- Add .is-open to open modal -->
-<div class="modal" id="modal">
-  <div class="container">
+<div class="modal is-open" id="modal">
+  <div class="container is-modal">
     <div class="modal-wrap">
       <button class="close-modal-btn">
-        <svg class="close-menu-icon" width="24" height="24">
+        <svg width="24" height="24">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>

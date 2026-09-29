@@ -96,8 +96,37 @@
   border: 2px solid var(--dark-mustard);
 }
 .form-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 44px;
   min-height: 44px;
 }
+.form-button.is-loading .btn-text {
+  visibility: hidden;
+  opacity: 0;
+}
+.form-button .loader {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  box-sizing: border-box;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  background: var(--opacity-66);
+}
+.form-button.is-loading .loader {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .form-button {
     max-width: 310px;
@@ -138,6 +167,7 @@
   visibility: visible;
 }
 .modal-wrap {
+  margin: 0 auto;
   position: relative;
   border-radius: 24px;
   display: flex;
@@ -187,4 +217,8 @@
 .close-modal-btn:hover,
 .close-modal-btn:focus {
   opacity: var(--opacity-60);
+}
+/*  */
+body.is-scroll-disabled {
+  overflow: hidden;
 }
