@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="./images/hero-img/hero-bg.webp 480w, 
+               ./images/hero-img/hero-bg-tabl.webp 1024w, 
+               ./images/hero-img/hero-bg-dec.webp 1440w"
+      imagesizes="(max-width: 767.98px) 480px, 
+              (max-width: 1439.98px) 1024px, 
+              1440px"
+    />
+    <link rel="preconnect" href="https://goit.study" />
     <link rel="icon" type="image/svg+xml" href="/team-project-2-wedding-photographer/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -543,7 +554,7 @@
 </section>
 
 <!-- Add .is-open to open modal -->
-<div class="modal is-open" id="modal">
+<div class="modal" id="modal">
   <div class="container is-modal">
     <div class="modal-wrap">
       <button class="close-modal-btn">
@@ -555,18 +566,18 @@
       <picture>
         <source
           media="(min-width: 1440px)"
-          srcset="../images/images/success_modal/desktop_success-modal.avif 1x, ../images/images/success_modal/desktop_success-modal@2x.avif 2x"
+          srcset="/team-project-2-wedding-photographer/assets/tablet_success-modal-cqLqFzCN.avif 1x, /team-project-2-wedding-photographer/assets/tablet_success-modal@2x-CR9gXF9v.avif 2x"
         />
 
         <source
           media="(min-width: 768px)"
-          srcset="../images/images/success_modal/tablet_success-modal.avif 1x, ../images/images/success_modal/tablet_success-modal@2x.avif 2x"
+          srcset="/team-project-2-wedding-photographer/assets/tablet_success-modal-cqLqFzCN.avif 1x, /team-project-2-wedding-photographer/assets/tablet_success-modal@2x-CR9gXF9v.avif 2x"
         />
 
         <img
           class="img-modal"
-          src="../images/images/success_modal/mobile_success-modal.avif"
-          srcset="../images/images/success_modal/mobile_success-modal.avif 1x, ../images/images/success_modal/mobile_success-modal@2x.avif 2x"
+          src="/team-project-2-wedding-photographer/assets/mobile_success-modal-DQBsf3k3.avif"
+          srcset="/team-project-2-wedding-photographer/assets/mobile_success-modal-DQBsf3k3.avif 1x, /team-project-2-wedding-photographer/assets/mobile_success-modal@2x-D4p1BWUs.avif 2x"
           alt="Cup of coffee, a small, elegant sprig of fresh eucalyptus, and scattered wedding photo prints"
           width="295"
           height="207"
