@@ -5,7 +5,7 @@ import{S as F,N as R,P as z,K as G,A as K,a as m,i as f,b as V}from"./assets/ven
           </li>
         `).join("");t.innerHTML=i}function r(n){let i=0;n.forEach(d=>{d.style.height="auto"}),n.forEach(d=>{d.offsetHeight>i&&(i=d.offsetHeight)}),n.forEach(d=>{d.style.height=`${i}px`})}function a(){new F(".feedbacks-slider",{modules:[R,z,G,K],direction:"horizontal",grabCursor:!0,keyboard:{enabled:!0,onlyInViewport:!0},navigation:{nextEl:".swiper-button-next-custom",prevEl:".swiper-button-prev-custom"},pagination:{el:".swiper-pagination-custom",type:"bullets",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:24},768:{slidesPerView:3,spaceBetween:24},1200:{slidesPerView:3,spaceBetween:24}},a11y:{prevSlideMessage:"Previous review",nextSlideMessage:"Next review"},on:{init:function(){r(this.slides)},resize:function(){r(this.slides)}}})}async function c(){const n=await o();s(n),n&&n.length>0&&a()}c()});const q="https://wedding-photographer.b.goit.study/api/";async function E(e,t=9){const o=await m.get(`${q}wedding-photos`,{params:{page:e,limit:t}});return console.log(o.data),o.data}async function J(){return(await m.get(`${q}categories`)).data}async function H(e,t,o=9){const r=(await J()).find(c=>c.category===e)._id,a=await m.get(`${q}wedding-photos`,{params:{page:t,limit:o,categoryId:r}});return console.log(a.data),a.data}function S(e,t=!1){const o=document.querySelector(".portfolio-gallery"),s=e.map(({img:r,desc:a})=>`<li class="gallery-item">
             <img class="gallery-img"
-            src="${r}" alt="${a} 
+            src="${r}" alt="${a}"
             loading="lazy" 
             decoding="async"
             />
