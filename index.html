@@ -10,11 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Wedding photographer</title>
     <script type="module" crossorigin src="/team-project-2-wedding-photographer/index.js"></script>
     <link rel="modulepreload" crossorigin href="/team-project-2-wedding-photographer/assets/vendor-5Gi-gZYA.js">
     <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/vendor-nT201oa_.css">
-    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/index-COp8yX5Z.css">
+    <link rel="stylesheet" crossorigin href="/team-project-2-wedding-photographer/assets/index-CiOOsld8.css">
   </head>
   <body>
     <!-- у цьому файлі містяться лише завантаження паршалів
@@ -25,29 +32,33 @@
   <div class="container is-header">
     <a class="nav-logo" href="./index.html" aria-label="Site logo">
       <svg class="nav-logo-icon" width="69" height="61">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-logo"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-logo"></use>
       </svg>
     </a>
     <div class="nav-btn-wrap">
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link text-regular-normal active-link" href="#"
+            <a class="nav-link text-regular-normal active-link" href="#about"
               >About Me</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-regular-normal active-link" href="#"
+            <a class="nav-link text-regular-normal active-link" href="#benefits"
               >Benefits</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-regular-normal active-link" href="#"
+            <a
+              class="nav-link text-regular-normal active-link"
+              href="#portfolio"
               >Portfolio</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-regular-normal active-link" href="#">FAQ</a>
+            <a class="nav-link text-regular-normal active-link" href="#faq"
+              >FAQ</a
+            >
           </li>
         </ul>
       </nav>
@@ -62,10 +73,10 @@
       aria-label="Open navigation menu"
     >
       <svg class="open-menu-icon" width="24" height="24">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-menu"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-menu"></use>
       </svg>
       <svg class="close-menu-icon" width="24" height="24">
-        <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-add"></use>
       </svg>
     </button>
   </div>
@@ -109,7 +120,7 @@
 </div>
 
     <main>
-      <section class="section is-hero">
+      <section class="section is-hero" id="hero">
   <div class="container is-hero">
     <div class="wrapper is-hero">
       <div class="text-wrapper">
@@ -129,8 +140,14 @@
 
       <section class="section is-about" id="about">
   <div class="container is-about">
-    <svg class="sec-decoration is-about" width="299" height="20" aria-hidden="true" focusable="false">
-      <use href="../images/sprite-1.svg#icon-decoration"></use>
+    <svg
+      class="sec-decoration is-about"
+      width="299"
+      height="20"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-decoration"></use>
     </svg>
     <h2 class="heading-medium about-heading">
       Meet Maria Kovalenko: Your Partner in Capturing Unforgettable Wedding
@@ -144,28 +161,22 @@
     </p>
 
     <picture class="about-picture">
-      <!-- Mobile: below 768px -->
-      <source
-        media="(max-width: 767px)"
-        srcset="../images/about-img/about-img.jpg 1x, ../images/about-img/about-img@2x.jpg 2x"
-      />
-
-      <!-- Tablet: 768px to 1439px -->
-      <source
-        media="(min-width: 768px) and (max-width: 1439px)"
-        srcset="../images/about-img/about-tabl-img.jpg 1x, ../images/about-img/about-tabl-img@2x.jpg 2x"
-      />
-
-      <!-- Desktop: 1440px and wider -->
+      <!-- Desktop: 1440px + -->
       <source
         media="(min-width: 1440px)"
-        srcset="../images/about-img/about-dec-img.jpg 1x, ../images/about-img/about-dec-img@2x.jpg 2x"
+        srcset="../images/about-img/about-dec-img.webp 1x, ../images/about-img/about-dec-img@2x.webp 2x"
       />
 
-      <!-- Fallback image -->
+      <!-- Tablet: 768px  -->
+      <source
+        media="(min-width: 768px)"
+        srcset="../images/about-img/about-tabl-img.webp 1x, ../images/about-img/about-tabl-img@2x.webp 2x"
+      />
+
+      <!-- Fallback + Mobile -->
       <img
-        src="../images/about-img/about-img.jpg"
-        srcset="../images/about-img/about-img@2x.jpg 2x"
+        src="../images/about-img/about-img.webp"
+        srcset="../images/about-img/about-img@2x.webp 2x"
         alt="Bride and groom holding hands during their wedding celebration"
         width="335"
         height="273"
@@ -175,17 +186,25 @@
   </div>
 </section>
 
-      <section class="section is-benefits">
-  <!-- add new svg -->
+      <section class="section is-benefits" id="benefits">
   <div class="container is-benefits">
+    <svg
+      class="sec-decoration is-benefits"
+      width="299"
+      height="20"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-decoration"></use>
+    </svg>
     <h2 class="heading-medium heading-benefits">
       Capture Every Moment with Our Tailored Wedding Photography Packages
     </h2>
     <div>
       <ul class="benefits-list">
         <li class="benefits-item">
-          <svg class="benefits-icon">
-            <use href="./src/images/sprite.svg#icon-benefits-1"></use>
+          <svg class="benefits-icon" width="100" height="100">
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-glass"></use>
           </svg>
           <h2 class="text-large-semi-bold benefits-item-heading">
             Your Perfect Story: A Package Tailored for You.
@@ -196,8 +215,8 @@
           </p>
         </li>
         <li class="benefits-item">
-          <svg class="benefits-icon">
-            <use href="./src/images/sprite.svg#icon-benefits-2"></use>
+          <svg class="benefits-icon" width="100" height="100">
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-camera"></use>
           </svg>
           <h2 class="text-large-semi-bold benefits-item-heading">
             From Dawn to Stars: Your Full Day in Frame.
@@ -208,8 +227,8 @@
           </p>
         </li>
         <li class="benefits-item">
-          <svg class="benefits-icon">
-            <use href="./src/images/sprite.svg#icon-benefits-3"></use>
+          <svg class="benefits-icon" width="100" height="100">
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-church"></use>
           </svg>
           <h2 class="text-large-semi-bold benefits-item-heading">
             Precious Moments: Capturing Your Key Events.
@@ -227,7 +246,7 @@
       <section id="feedbacks" class="section is-feedback">
   <div class="container is-feedback">
     <svg class="sec-decoration" width="299" height="20">
-      <use href="../images/sprite-1.svg#icon-decoration"></use>
+      <use href="../images/sprite.svg#icon-decoration"></use>
     </svg>
 
     <h2 class="heading-large feedbacks-title">
@@ -243,30 +262,37 @@
 
       <div class="feedbacks-slider-bottom">
         <div class="swiper-pagination-custom" id="feedbacks-pagination"></div>
-        
+
         <div class="swiper-navigation">
-          <button type="button" class="swiper-button-prev-custom slider-btn" aria-label="Previous slide">
+          <button
+            type="button"
+            class="swiper-button-prev-custom slider-btn"
+            aria-label="Previous slide"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-arrow-back"></use>
+              <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-forward"></use>
             </svg>
           </button>
-          
-          <button type="button" class="swiper-button-next-custom slider-btn" aria-label="Next slide">
+
+          <button
+            type="button"
+            class="swiper-button-next-custom slider-btn"
+            aria-label="Next slide"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-arrow-back"></use>
+              <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-forward"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
-    
   </div>
 </section>
 
       <section class="section is-portfolio" id="portfolio">
   <div class="container is-portfolio">
     <svg class="sec-decoration" width="299" height="20">
-      <use href="../images/sprite-1.svg#icon-decoration"></use>
+      <use href="../images/sprite.svg#icon-decoration"></use>
     </svg>
     <h2 class="heading-large">Portfolio Highlights</h2>
 
@@ -319,7 +345,7 @@
       <section id="faq" class="section is-faq">
   <div class="container is-faq">
     <svg class="sec-decoration" width="299" height="20">
-      <use href="/team-project-2-wedding-photographer/assets/sprite-1-U3Th2WbY.svg#icon-decoration"></use>
+      <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-decoration"></use>
     </svg>
 
     <h2 class="faq-heading heading-large">Frequently Asked Questions</h2>
@@ -334,7 +360,7 @@
         <button class="faq-question text-medium-bold" aria-expanded="false">
           How do we book our date and how far in advance should we do it?
           <svg class="faq-icon" aria-hidden="true">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-add"></use>
           </svg>
         </button>
         <div class="faq-answer" role="region">
@@ -353,7 +379,7 @@
           We don't know how to pose and feel awkward in front of the camera. Do
           you help with that?
           <svg class="faq-icon" aria-hidden="true">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-add"></use>
           </svg>
         </button>
         <div class="faq-answer" role="region">
@@ -372,7 +398,7 @@
         <button class="faq-question text-medium-bold" aria-expanded="false">
           When will we receive our photos and how many will there be?
           <svg class="faq-icon" aria-hidden="true">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-add"></use>
           </svg>
         </button>
         <div class="faq-answer" role="region">
@@ -390,7 +416,7 @@
         <button class="faq-question text-medium-bold" aria-expanded="false">
           What is typically included in your wedding packages?
           <svg class="faq-icon" aria-hidden="true">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-add"></use>
           </svg>
         </button>
         <div class="faq-answer" role="region">
@@ -407,7 +433,7 @@
         <button class="faq-question text-medium-bold" aria-expanded="false">
           Do you travel for weddings outside of Berlin?
           <svg class="faq-icon" aria-hidden="true">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-add"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-add"></use>
           </svg>
         </button>
         <div class="faq-answer" role="region">
@@ -423,11 +449,11 @@
   </div>
 </section>
 
-      <section class="section is-contacts" id="#contacts">
+      <section class="section is-contacts" id="contacts">
   <div class="container is-contacts">
     <div class="contacts-content-wrapper">
       <svg class="sec-decoration is-contacts" width="299" height="20">
-        <use href="../images/sprite-1.svg#icon-decoration"></use>
+        <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-decoration"></use>
       </svg>
       <h2 class="contacts-heading heading-large">Let's Tell Your Story</h2>
       <p class="contacts-text">
@@ -437,14 +463,23 @@
       <address>
         <ul class="contacts-inform-list">
           <li class="contacts-inform-item text-regular-normal">
+            <svg class="" width="24" height="24">
+              <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-mail"></use>
+            </svg>
             <a href="mailto:info@mariakovalenko.com" target="_blank"
               >info@mariakovalenko.com</a
             >
           </li>
           <li class="contacts-inform-item text-regular-normal">
+            <svg class="" width="24" height="24">
+              <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-call"></use>
+            </svg>
             <a href="tel:+405551234567" target="_blank">+40 (555) 123-4567</a>
           </li>
           <li class="contacts-inform-item text-regular-normal">
+            <svg class="" width="24" height="24">
+              <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-location-on"></use>
+            </svg>
             <a
               href="https://maps.google.com/?q=Raschdorffstraße+2-26,+13409+Berlin,+Germany"
               target="_blank"
@@ -507,7 +542,7 @@
     <div class="modal-wrap">
       <button class="close-modal-btn">
         <svg class="close-menu-icon" width="24" height="24">
-          <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-close"></use>
+          <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-close"></use>
         </svg>
       </button>
       <h2 class="heading-modal">Thank You for Your Inquiry!</h2>
@@ -548,7 +583,7 @@
       <div class="logo-copyright-wrap">
         <a class="nav-logo" href="./index.html" aria-label="Site logo">
           <svg class="nav-logo-icon" width="206" height="180">
-            <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-logo"></use>
+            <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-logo"></use>
           </svg>
         </a>
         <p class="copyright-text text-regular-small">
@@ -595,7 +630,7 @@
                 target="_blank"
               >
                 <svg class="soc-icon" width="20" height="20">
-                  <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-fb"></use>
+                  <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-facebook"></use>
                 </svg>
                 Facebook</a
               >
@@ -607,7 +642,7 @@
                 target="_blank"
               >
                 <svg class="soc-icon" width="19" height="19">
-                  <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-facebook"></use>
+                  <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-instagram"></use>
                 </svg>
                 Instagram</a
               >
@@ -619,7 +654,7 @@
                 target="_blank"
               >
                 <svg class="soc-icon" width="20" height="20">
-                  <use href="/team-project-2-wedding-photographer/assets/sprite-BSWaYgNB.svg#icon-instagram"></use>
+                  <use href="/team-project-2-wedding-photographer/assets/sprite-CRnoMbPx.svg#icon-x"></use>
                 </svg>
                 X</a
               >
