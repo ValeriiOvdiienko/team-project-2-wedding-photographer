@@ -6,7 +6,7 @@ export function createGallery(images, newGallery = false) {
       ({ img, desc }) =>
         `<li class="gallery-item">
             <img class="gallery-img"
-            src="${img}" alt="${desc} 
+            src="${img}" alt="${desc}"
             loading="lazy" 
             decoding="async"
             />
