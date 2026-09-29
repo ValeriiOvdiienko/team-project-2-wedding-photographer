@@ -13,7 +13,7 @@
 .wrapper.is-hero {
   padding: 32px 20px;
   --hero-overlay: linear-gradient(to left, var(--opcity-8), var(--opacity-66));
-  background-image: var(--hero-overlay), url('../images/hero-img/hero-bg.png');
+  background-image: var(--hero-overlay), url('../images/hero-img/hero-bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,33 +39,33 @@
 @media (min-resolution: 192dpi) {
   .wrapper.is-hero {
     background-image:
-      var(--hero-overlay), url('../images/hero-img/hero-bg@2x.png');
+      var(--hero-overlay), url('../images/hero-img/hero-bg_2x.webp');
   }
 }
 /* tablet & 2x dpi */
 @media (min-width: 768px) {
   .wrapper.is-hero {
     background-image:
-      var(--hero-overlay), url('../images/hero-img/hero-bg-tabl.png');
+      var(--hero-overlay), url('../images/hero-img/hero-bg-tabl.webp');
   }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .wrapper.is-hero {
     background-image:
-      var(--hero-overlay), url('../images/hero-img/hero-bg-tabl@2x.png');
+      var(--hero-overlay), url('../images/hero-img/hero-bg-tabl_2x.webp');
   }
 }
 /* deckstop & 2x dpi */
 @media (min-width: 1440px) {
   .wrapper.is-hero {
     background-image:
-      var(--hero-overlay), url('../images/hero-img/hero-bg-dec.jpg');
+      var(--hero-overlay), url('../images/hero-img/hero-bg-dec.webp');
   }
 }
 @media (min-width: 1440px) and (min-resolution: 192dpi) {
   .wrapper.is-hero {
     background-image:
-      var(--hero-overlay), url('../images/hero-img/hero-bg-dec@2x.jpg');
+      var(--hero-overlay), url('../images/hero-img/hero-bg-dec_2x.webp');
   }
 }
 /* === media-запити для роботи з текстовими блоками === */
