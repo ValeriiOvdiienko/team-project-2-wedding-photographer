@@ -2,15 +2,60 @@
   text-align: center;
   margin-bottom: 24px;
 }
+
 .faq-text {
   text-align: center;
   margin-bottom: 40px;
 }
-@media (min-width: 1440px) {
+
+@media screen and (min-width: 1440px) {
   .faq-text {
     margin-bottom: 80px;
   }
 }
+
+.faq-item {
+  border: 2px solid var(--default-black);
+  border-radius: 24px;
+  margin-bottom: 16px;
+  background-color: var(--foreground-1);
+  overflow: hidden;
+  transition: box-shadow var(--anim);
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-item {
+    max-width: 704px;
+    margin: 0 auto 16px auto;
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-item {
+    max-width: 768px;
+  }
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-question {
+    padding: 24px;
+  }
+}
+
 .faq-icon {
   width: 20px;
   height: 20px;
@@ -24,59 +69,18 @@
   transform: rotate(45deg);
 }
 
-.faq-item {
-  /* width: 100%; */
-  border: 2px solid var(--default-black);
-  border-radius: 24px;
-  margin-bottom: 16px;
-  background-color: var(--foreground-1);
-  overflow: hidden;
-  transition: box-shadow var(--anim);
-  padding: 24px 20px;
-}
-@media screen and (min-width: 768px) {
-  .faq-item {
-    max-width: 704px;
-    margin: 0 auto 16px auto;
-    padding: 24px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .faq-item {
-    max-width: 768px;
-  }
-}
-.faq-question {
-  width: 100%;
-  text-align: left;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* color: var(--default-black); */
-}
-
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0;
   background-color: var(--foreground-1);
-  transition:
-    max-height var(--anim),
-    margin-top var(--anim);
 }
 
-.faq-answer.open {
-  max-height: 400px;
-  margin-top: 20px;
-}
-@media screen and (min-width: 768px) {
-  .faq-answer.open {
-    max-height: 300px;
-  }
-}
 .faq-answer p {
   margin: 0;
+  padding: 24px 20px;
   color: var(--default-black);
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .faq-answer p {
+    padding: 24px;
+  }
 }
