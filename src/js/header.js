@@ -9,7 +9,7 @@ function handlerClick(event) {
 }
 
 const mobileMenuLinks = document.querySelectorAll(
-  '.mobile-menu-link, .mobile-menu .button'
+  '.mobile-menu-link, .mobile-menu .button, .nav-logo'
 );
 mobileMenuLinks.forEach(link => {
   link.addEventListener('click', () => {

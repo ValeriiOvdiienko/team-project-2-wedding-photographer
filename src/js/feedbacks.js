@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const markup = feedbacks
       .map(({ descr, name }) => {
         return `
-        <li class="swiper-slide feedback-item">
-          <p>"${descr}"</p>
-          <p>${name}</p>
-        </li>
-      `;
+          <li class="swiper-slide feedback-item">
+            <p>"${descr}"</p>
+            <p class="text-regular-semi-bold">${name}</p>
+          </li>
+        `;
       })
       .join('');
 
