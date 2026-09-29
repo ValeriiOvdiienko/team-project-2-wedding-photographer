@@ -30,6 +30,12 @@
   gap: 16px;
   margin-bottom: 24px;
 }
+.contacts-inform-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
 .is-contacts a {
   text-decoration: underline;
   text-decoration-color: var(--transparent);

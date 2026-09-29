@@ -8,7 +8,9 @@ function handlerClick(event) {
   body.classList.toggle('menu-is-open');
 }
 
-const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+const mobileMenuLinks = document.querySelectorAll(
+  '.mobile-menu-link, .mobile-menu .button'
+);
 mobileMenuLinks.forEach(link => {
   link.addEventListener('click', () => {
     header.classList.remove('menu-open');

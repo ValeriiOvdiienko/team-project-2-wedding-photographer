@@ -7,15 +7,10 @@
 }
 
 /* .benefits-icon {
-  fill: black;
-  width: 100px;
-  height: 100px;
   display: inline-block;
-  width: 1em;
-  height: 1em;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: var(--default-black);
+  fill: none;
 } */
 
 .benefits-list {

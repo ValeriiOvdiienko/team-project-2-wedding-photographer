@@ -4,7 +4,24 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  /* margin-bottom: 32px; */
+}
+/* класи для зручного скролу з мобільних девайсів */
+@media (max-width: 767.98px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--background);
+    transition: transform var(--anim);
+  }
+  .header.header-hidden {
+    transform: translateY(-100%);
+  }
+  body {
+    padding-top: 64px;
+  }
 }
 
 .container.is-header {

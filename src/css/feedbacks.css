@@ -90,7 +90,7 @@
 .slider-btn svg {
   fill: none;
   stroke: currentColor;
-  stroke-width: 2px;
+  stroke-width: 0.5px;
 }
 
 .swiper-button-prev-custom svg {
